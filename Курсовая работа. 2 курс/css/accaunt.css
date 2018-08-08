@@ -1,0 +1,82 @@
+﻿@charset "utf-8";
+
+/*ДЛЯ СТРАНИЦЫ POPULAR TRACKS BEGIN**************/
+
+/*TABLE BEGIN**************************************/
+
+table {
+	width:98%;
+	text-align:center;
+	font-family:"Helvetica Neue", Helvetica, sans-serif;
+	color:#000;
+	font-size:12px;
+	background:#eaebec;
+	border:#ccc 1px solid;
+	border-radius:3px;
+}
+
+/*Заголовочная ячейка*/
+table th {
+	padding:5px 5px 5px 5px;
+	border-top:1px solid #fafafa;
+	border-bottom:1px solid #e0e0e0;/*снизу*/
+	background: #ededed;
+	border-left: 1px solid #e0e0e0;
+}
+
+/*Строки таблицы*/
+table tr{
+	padding-left:50%; 
+}
+
+/*первый столбец*/
+table tr td:first-child{
+	text-align: left;
+	padding-left:25px;
+	border-left: 0;
+}
+
+/*нечетные ячейки*/
+table tr td {
+	padding:5px;
+	background: #fafafa;
+}
+
+/*четные ячейки*/
+table tr.even td{
+	background: #f6f6f6;
+}
+
+/*при наведении*/
+table tr:hover td{
+	background: #ccc;
+}
+
+/*ДЛЯ СТРАНИЦЫ POPULAR TRACKS END**************/
+
+	
+/*БЛОКИ С ОБЛОЖКАМИ BEGIN*******************/
+
+img{
+	width:100%;
+	height:100%;
+	border-radius: 6px 6px 6px 6px;
+}
+
+/*ПОДПИСЬ БЛОКОВ*/
+.signature{
+	font-size:13px;
+	color: #000;
+	align-content:flex-start;/*ВЫРАВНИВАНИЕ СТРОК ВНУТРИ КОНТЕЙНЕРА*/
+	font-family:Arial, "Helvetica Neue", Helvetica, sans-serif;}
+	
+/*ПРИ НАВЕДЕНИИ*/
+img:hover {
+  border: 30px solid #000;
+  border-radius: 50%;
+  width:60%;
+  height:60%;
+  cursor:pointer;
+}
+	
+/*БЛОКИ С ОБЛОЖКАМИ BEGIN END******************/

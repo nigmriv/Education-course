@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+ul.css-menu-2 {
+list-style: none;
+border-bottom: 1px #888899 solid;
+padding-bottom: 10px
+}
+
+ul.css-menu-2 li {
+display: inline;
+margin-right: 5px
+}
+
+ul.css-menu-2 li a {
+color: #888899;
+text-decoration: none;
+background: #f7f7f9;
+border: 1px #bbbbcc solid;
+border-bottom: none;
+padding: 10px 14px
+}
+
+ul.css-menu-2 li a:hover {
+padding: 14px 14px 10px 14px
+}
+
+ul.css-menu-2 li a.selected {
+color: #555566;
+background: #ffffff;
+border: 1px #888899 solid;
+border-bottom: 1px #ffffff solid;
+padding: 14px 14px 10px 14px
+}

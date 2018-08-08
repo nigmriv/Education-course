@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-image:url(../img/fon.png);
+}
+/*FORM BEGIN*******************************/
+.form {
+
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+
+    /* Size and position */
+    width: 250px;
+    margin: 10% auto 3%;
+    padding: 10px;
+    overflow: hidden;/*управляет отображением содержания блочного элемента, hidden-Отображается только область внутри элемента, остальное будет скрыто*/
+
+    /* Styles */
+    background: #111; 
+    border-radius: 0.4em;
+    border: 1px solid #191919;
+   
+}
+
+.form label {
+
+    /* Size and position */
+    width: auto;
+    float: left;
+    padding-top: 9px;
+
+    /* Styles */
+    color: #ddd;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-indent: 10px;/*отступ первой строки блока текста*/
+    font-weight: 700;/*насыщеность шрифта*/
+    cursor: pointer;
+}
+
+.form input[type=text],
+.form input[type=email],
+.form input[type=password] {
+
+    /* Size and position */
+    width: 240px;
+    float: left;
+    padding: 8px 5px;
+    margin-bottom: 10px;
+    font-size: 12px;
+
+    /* Styles */
+    background: #1f2124; /* Fallback */
+    background: linear-gradient(#1f2124, #27292c);    
+    border: 1px solid #000;
+    border-radius: 3px;
+
+    /* Font styles */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #fff;
+
+}
+
+.form input[type=text]:hover,
+.form input[type=email]:hover,
+.form input[type=password]:hover,
+.form label:hover ~ input[type=text],
+.form label:hover ~ input[type=email],
+.form label:hover ~ input[type=password] {
+    background: #27292c;
+}
+
+.form input[type=text]:focus, 
+.form input[type=email]:focus,
+.form input[type=password]:focus {
+    box-shadow: inset 0 0 2px #000;
+    background: #494d54;
+    border-color: #ff6600;
+    outline: none; 
+}
+
+.form input[type=submit] {
+
+    /* Width and position */
+    width: 100%;
+    padding: 8px 5px;
+
+    /* Styles */
+    border: 1px solid #ff6600; /* Fallback */
+    border: 1px solid #ff6600;
+    border-radius: 3px;
+    background: #ff6600;
+    cursor:pointer;
+  
+    /* Font styles */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.form input[type=submit]:hover { 
+    box-shadow: inset 0 1px 0 #ff6600;
+}
+
+.form input[type=submit]:active { 
+    background: #ccc;
+    border-color: #000; /* Fallback */
+    border-color: rgba(0,0,0,0.9);
+}
+

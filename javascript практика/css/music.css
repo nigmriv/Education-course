@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/*БЛОКИ С ОБЛОЖКАМИ BEGIN**********************************************/
+
+img{
+	width:100%;
+	height:100%;
+	border-radius: 6px 6px 6px 6px;
+}
+
+/*ПОДПИСЬ БЛОКОВ*/
+.signature{
+	font-size:13px;
+	color: #000;
+	align-content:flex-start;/*ВЫРАВНИВАНИЕ СТРОК ВНУТРИ КОНТЕЙНЕРА*/
+	font-family:Arial, "Helvetica Neue", Helvetica, sans-serif;}
+	
+/*ЭФФЕКТ ПРИ НАВЕДЕНИЕ НА ОБЛОЖКИ*/
+img:hover {
+  border: 30px solid #000;
+  border-radius: 50%;
+  width:60%;
+  height:60%;
+  cursor:pointer;
+}
+
+/*БЛОКИ С ОБЛОЖКАМИ END************************************************/
+
+

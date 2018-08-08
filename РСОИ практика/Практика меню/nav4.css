@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+nav {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #ccc;/*устанавливает толщину, стиль и цвет границы внизу элемента*/
+    display: block;/*определяет, как элемент должен быть показан в документе. Элемент показывается как блочный*/
+    height: 150px;
+    line-height: 50px; /*межстрочный интервал*/
+    float: left;
+    height: 100%;
+    width: 100%;
+    text-align:center;
+    margin-right: -100%;
+}
+
+nav li {
+    display: inline-block;/*блочный элемент, который обтекается другими элементами подобно строчному элементу*/
+    font-size: 14px;
+    position: relative;/*Положение элемента устанавливается относительно его исходного места*/
+}
+
+/*неактивные пункты*/
+nav li a {
+    border-bottom: 3px solid transparent;/*Устанавливает прозрачный фон*/
+    box-sizing: border-box;/*Применяется для изменения алгоритма расчета ширины высоты элемента. width height включают в себя значения полей границ, но не (margin)*/
+    color: #999;
+    display: block;
+    font-family:Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;/*насыщеность шрифта*/
+    height: 50px;
+    letter-spacing: 0.5px;/*межсимвольный интервал*/
+    padding: 0 15px;
+}
+
+a {
+    color: #0A0A16;
+    cursor: pointer;
+    outline: 0 none;/*устанавливает цвет, стиль и толщину внешней границы на всех сторонах элемента*/
+    text-decoration: none;/*оформление текста в виде его подчеркивания, перечеркивания, линии над текстом и мигания. */
+}
+
+/*фиксирование пунктов*/
+nav {
+  display: table;
+  table-layout: fixed;
+
+}
+
+/*при наведение*/
+nav li a:hover {
+    border-color: #ff6600;
+    color: #32323D;
+    text-decoration: none;
+    width:100%;
+}
+
+nav ul {
+  display: table-row;
+}
+
+nav ul li {
+  display: table-cell;
+}

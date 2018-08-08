@@ -1,0 +1,199 @@
+﻿<!doctype html>
+ <html>
+<head>
+<meta charset="utf-8">
+<title>Music</title>
+
+<!--подключение css/js BEGIN------------------>
+
+<link href="css/music.css" rel="stylesheet" type="text/css" media="screen, projection">
+<link href="css/general.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<!--подключение css/js END------------------>
+
+</head>
+
+<body>
+
+<!-- HEADER BEGIN----------------->
+
+<div id="header">
+
+<div id="logo"><a href="img/1.jpg"></a></div>
+
+<div id="nav">
+
+      <ul>
+	    <li><a href="new alboms.html"><button class="but">Музыка</button></a></li> 
+        <li><a href="my alboms.html"><button class="but">Аккаунт</button></a></li>
+        <li><a href="subscription.html"><button class="but">Настройки</button></a></li>
+        <li><a href="index.html"><button class="but">Выход</button></a></li>
+      </ul>
+      
+      </div>
+      </div>
+      
+<!-- HEADER END----------------->
+
+<!-- TWO MENU BEGIN------------------------->
+
+<nav>
+  <ul>
+      <li><a class="hider">Плеер</a></li><!--открытие плеера-->
+      <li><a href="new alboms.html">Альбомы</a></li>
+      <li><a href="genre.html">Жанры</a></li>
+      <li><a href="playlist.html">Плейлисты</a></li>
+  </ul>
+</nav>
+
+<!-- TWO MENU END------------------------->
+
+<!-- CONTENT BEGIN----------------->
+		
+        <div class="container">
+			<main class="content">
+
+	<ul class="column">
+		<li>
+           <img src="img\2.jpg">
+           <figcaption class="signature">Рок</figcaption>
+        </li>
+        
+        <li>
+         <img src="img\3.jpg">
+         <figcaption class="signature">Блюз</figcaption>
+        </li>
+        
+        <li>
+           <img src="img\4.jpg">
+           <figcaption class="signature">Фолк</figcaption>
+        </li>
+
+        <li>
+           <img src="img\5.jpg">
+           <figcaption class="signature">Metal</figcaption>
+        </li>
+        
+        <li>
+          <img src="img\6.jpg">
+           <figcaption class="signature">Классическая музыка</figcaption>
+        </li>
+
+        <li>
+          <img src="img\7.jpg">
+           <figcaption class="signature">Mix Music</figcaption>
+        </li>
+
+        <li>
+          <img src="img\8.jpg">
+           <figcaption class="signature">Электронная музыка</figcaption>
+        </li>
+
+        <li>
+         <img src="img\9.jpg">
+           <figcaption class="signature">Danse Music</figcaption>
+        </li>
+
+        <li>
+         <img src="img\10.jpg">
+           <figcaption class="signature">Поп</figcaption>
+        </li>
+
+        <li>
+         <img src="img\11.jpg">
+           <figcaption class="signature">Инди</figcaption>
+        </li>
+
+        <li>
+         <img src="img\12.jpg">
+           <figcaption class="signature">Бардовские песни</figcaption>
+        </li>
+
+         <li>
+         <img src="img\13.jpg">
+           <figcaption class="signature">Регги</figcaption>
+        </li>
+
+ 	    <li>
+         <img src="img\14.jpg">
+           <figcaption class="signature">Dubstep</figcaption>
+        </li>
+
+		<li>
+         <img src="img\15.jpg">
+           <figcaption class="signature">Свинг</figcaption>
+        </li>
+
+		<li>
+         <img src="img\16.jpg">
+           <figcaption class="signature">Мариачи</figcaption>
+        </li>
+
+		<li>
+         <img src="img\17.jpg">
+           <figcaption class="signature">Хип-Хоп</figcaption>
+        </li>
+
+		<li>
+         <img src="img\18.jpg">
+           <figcaption class="signature">Кантри</figcaption>
+        </li>
+
+		<li>
+         <img src="img\19.jpg">
+           <figcaption class="signature">Фолк</figcaption>
+        </li>
+
+		<li>
+         <img src="img\20.jpg">
+           <figcaption class="signature">Instrumental</figcaption>
+        </li>
+
+   </ul>
+        
+</main>
+</div>
+
+<!-- CONTENT END------------------------->
+
+<!--MP3 PLAYER BEGIN--------------------->
+
+<div id="hidden" style="display: none;"><!--СКРЫТИЕ ПЛЕЕРА-->
+
+    <div class="audio">
+
+        <div class="player">
+            <div class="pl"></div>
+            <div class="title"></div>
+            <div class="artist"></div>
+            <div class="cover"></div>
+            <div class="controls">
+                <div class="play"></div>
+                <div class="pause"></div>
+                <div class="rew"></div>
+                <div class="fwd"></div>
+            </div>
+            <div class="volume"></div>
+            <div class="tracker"></div>
+        </div>
+        <ul class="playlist hidden">
+            <li audiourl="01.mp3" cover="cover1.jpg" artist="Artist 1">01.mp3</li>
+            <li audiourl="02.mp3" cover="cover2.jpg" artist="Artist 2">02.mp3</li>
+            <li audiourl="03.mp3" cover="cover3.jpg" artist="Artist 3">03.mp3</li>
+            <li audiourl="04.mp3" cover="cover4.jpg" artist="Artist 4">04.mp3</li>
+            <li audiourl="05.mp3" cover="cover5.jpg" artist="Artist 5">05.mp3</li>
+            <li audiourl="06.mp3" cover="cover6.jpg" artist="Artist 6">06.mp3</li>
+            <li audiourl="07.mp3" cover="cover7.jpg" artist="Artist 7">07.mp3</li>
+        </ul>
+
+    </div>
+    </div>
+
+ <!--MP3 PLAYER END-->  
+
+</body>
+</html>

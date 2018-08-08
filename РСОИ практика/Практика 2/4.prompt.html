@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>4</title>
+
+
+</head>
+<body>
+</head>
+
+
+
+<script>
+
+
+var name = prompt('Как вас зовут?', 'ваше имя');
+	var surname = prompt('Ваша фамилия?', 'ваша фамилия');
+	var patronomic = prompt('ваше отчество?', 'ваше отчество');
+	var occupation = prompt('Род вашей деятельности?', 'ваша деятельность');
+	var email = prompt('введите ваш email', 'ваше email');
+	var tel = prompt('введите ваш телефон', 'ваш телефон');
+	var street = prompt('улица где вы живете', 'ваша улица');
+	var home = prompt('номер вашего дома', 'ваш дом');
+	var apartament = prompt('номер вашей квартиры', 'ваша квартира');
+	var number = prompt('ваш уровень доходов', 'уровень доходов');
+	var day;
+	do {
+    day = prompt('ваш день рождения', 'день рождения');
+	} while (day < 1 || day > 31);
+	var mois;
+	do {
+    mois = prompt('месяц вашего рождения', 'месяц рождения');
+	} while (mois < 1 || mois > 12);
+	var anee;
+	do {
+    anne = prompt('год вашего рождения', 'год рождения');
+	} while (anne < 1957 || anne > 2007);
+	var animal = prompt('ваше первое домашнее животное', 'животное');
+alert('Вас зовут ' + name + ' ваша фамилия ' + surname +' ваше отчество ' + patronomic + ' ваша деятельность ' + occupation + ' ваш email ' + email + ' ваш телефон ' + tel + ' ваша улица ' + street + ' номер дома ' + home + ' номер квартиры ' + apartament + ' ваш уровень доходов ' + number + ' ваш день рождения ' + day + ' ваш месяц рождения ' + mois + ' год вашего рождения ' + anne + ' ваше домашнее животное ' + animal);	
+</script>
+
+</body>
+</html>

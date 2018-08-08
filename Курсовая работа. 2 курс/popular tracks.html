@@ -1,0 +1,145 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Music</title>
+
+<!--подключение css/js/ BEDIN------->
+
+<link href="css/accaunt.css" rel="stylesheet" type="text/css" media="screen, projection">
+<link href="css/general.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<!--подключение css/js/ END--------->
+
+</head>
+
+<body>
+
+<!-- HEADER BEGIN----------------->
+
+<div id="header">
+
+<div id="logo"><a href="img/1.jpg"></a></div>
+
+<div id="nav">
+
+      <ul>
+	    <li><a href="new alboms.html"><button class="but">Музыка</button></a></li> 
+        <li><a href="my alboms.html"><button class="but">Аккаунт</button></a></li>
+        <li><a href="subscription.html"><button class="but">Настройки</button></a></li>
+        <li><a href="index.html"><button class="but">Выход</button></a></li>
+      </ul>
+      
+      </div>
+      </div>
+      
+<!-- HEADER END----------------->
+
+<!-- TWO MENU BEGIN------------------------->
+
+<nav>
+
+  <ul>
+      <li><a class="hider">Плеер</a></li><!--открытие плеера-->
+      <li><a href="my alboms.html">Мои Альбомы</a></li>
+      <li><a href="my playlist.html">Мои Плейлисты</a></li>
+      <li><a href="popular tracks.html">Часто прослушиваемые</a></li>
+  </ul>
+  
+</nav>
+
+<!-- TWO MENU END------------------------->
+
+<!-- CONTENT BEGIN------------------------->
+
+		<div class="container">
+			<main class="content">
+
+<table cellspacing="0"> 
+
+	<tr><th>Название трека</th><th>Исполнитель</th><th>Альбом</th><th>Продолжительность</th></tr>
+    
+	<tr><td>À cause</td><td>Céline Dion</td><td>D’elles</td><td>3:14</td></tr>
+	<tr class="even"><td>Elle a dit</td><td>Mylène Farmer</td><td>Monkey Me</td><td>3:52</td></tr>
+
+	<tr><td>Les amis</td><td>Julie Zenatti</td><td>Blanc</td><td>2:50</td></tr>
+	<tr class="even"><td>3,5,7</td><td>Patrick Fiori</td><td>L'Instinct masculin</td><td>2:53</td></tr>
+	
+    <tr><td>Et s'il n'en restait qu'une</td><td>Céline Dion</td><td>D’elles</td><td>3:32</td></tr>
+	<tr class="even"><td>On s'est aimé à cause</td><td>Céline Dion</td><td>D’elles</td><td>4:04</td></tr>
+
+	<tr><td>Destin</td><td>Céline Dion</td><td>D’eux</td><td>4:15</td></tr>
+	<tr class="even"><td>Dieu qu'elle était belle</td><td>Patrick Fiori</td><td>L'Instinct masculin</td><td>3:42</td></tr>
+
+	<tr><td>Parce qu'on m'a dit</td><td>Patrick Fiori</td><td>L'Instinct masculin</td><td>3:42</td></tr>
+	<tr class="even"><td>Elle</td><td>Patrick Fiori</td><td>Choisir</td><td>3:56</td></tr>
+
+	<tr><td>Comme Une Geisha</td><td>Julie Zenatti</td><td>Plus de diva</td><td>3:31</td></tr>
+	<tr class="even"><td>La vérité</td><td>Julie Zenatti</td><td>Blanc</td><td>2:41</td></tr>
+
+    <tr><td>Demain</td><td>Patrick Fiori</td><td>Choisir</td><td>3:24</td></tr>
+	<tr class="even"><td>Carnival of Rust</td><td>Poets of the Fall</td><td>Carnival of Rust</td><td>4:19</td></tr>
+
+	<tr><td>War</td><td>Poets of the Fall</td><td>Twilleght Theater</td><td>5:05</td></tr>
+	<tr class="even"><td>Pars sans rien dire</td><td>Julie Zenatti</td><td>Blanc</td><td>3:20</td></tr>
+	
+    <tr><td>Appelle mon numéro</td><td>Mylène Farmer</td><td>Point de Suture</td><td>5:31</td></tr>
+	<tr class="even"><td>Je m'ennuie</td><td>Mylène Farmer</td><td>Point de Suture</td><td>4:23</td></tr>
+
+	<tr><td>L'Herbe Tendre</td><td>Julie Zenatti</td><td>Plus de diva</td><td>4:06</td></tr>
+	<tr class="even"><td>Même Si (What You're Made Of)</td><td>Lucie Silvas & Grégory Lemarcha</td><td>Cinq Ans</td><td>03:49</td></tr>
+
+	<tr><td>À force de...</td><td>Mylène Farmer</td><td>Monkey Me</td><td>4:08</td></tr>
+	<tr class="even"><td>Lonely Lisa</td><td>Mylène Farmer</td><td>Bleu noir</td><td>3:02</td></tr>
+
+	<tr><td>C'est pas moi</td><td>Mylène Farmer</td><td>Interstellaires</td><td>3:41</td></tr>
+	<tr class="even"><td>Nuit d'hiver</td><td>Mylène Farmer</td><td>Monkey Me</td><td>5:24</td></tr>
+
+</table>
+
+</main>
+</div>
+
+<!-- CONTENT END------------------------->
+
+<!--MP3 PLAYER BEGIN--------------------->
+
+<div id="hidden" style="display: none;"><!--СКРЫТИЕ ПЛЕЕЕРА-->
+
+    <div class="audio">
+
+        <div class="player">
+            <div class="pl"></div>
+            <div class="title"></div>
+            <div class="artist"></div>
+            <div class="cover"></div>
+            <div class="controls">
+                <div class="play"></div>
+                <div class="pause"></div>
+                <div class="rew"></div>
+                <div class="fwd"></div>
+            </div>
+            <div class="volume"></div>
+            <div class="tracker"></div>
+        </div>
+        <ul class="playlist hidden">
+            <li audiourl="01.mp3" cover="cover1.jpg" artist="Artist 1">01.mp3</li>
+            <li audiourl="02.mp3" cover="cover2.jpg" artist="Artist 2">02.mp3</li>
+            <li audiourl="03.mp3" cover="cover3.jpg" artist="Artist 3">03.mp3</li>
+            <li audiourl="04.mp3" cover="cover4.jpg" artist="Artist 4">04.mp3</li>
+            <li audiourl="05.mp3" cover="cover5.jpg" artist="Artist 5">05.mp3</li>
+            <li audiourl="06.mp3" cover="cover6.jpg" artist="Artist 6">06.mp3</li>
+            <li audiourl="07.mp3" cover="cover7.jpg" artist="Artist 7">07.mp3</li>
+        </ul>
+
+    </div>
+    </div>
+    
+ <!--MP3 PLAYER END------------------------->  
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+/*BUTTON BEGIN*************************************************************/
+
+#button2 {
+  background: #ff6600;
+  border: 1px solid #999;
+  border-radius: 3px;
+  color: #000;
+  font: bold 15px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  padding: 0.5% 0 0.5%;
+  text-align: center;
+  width: 17%; 
+  }
+  
+#button2:hover {
+    background: #ccc;
+    color: #222;
+    cursor: pointer; }
+	
+#button2:active {
+    background: #ccc;
+    color: #000; }
+	
+/*BUTTON END***********************************************************/
+
+/*настройка текста в label*/
+.text{
+	 font-family:Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/*ДЛЯ СТРАНИЦЫ PERSONAL DATE*****************************************/
+
+/*FORM BEGIN***********************************************************/
+
+.label{
+	color:#000;
+	float:right;
+	font-size:16px;
+}
+
+.input  {
+    background: #e8e8e8;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    width: 80%;
+    height: 100%;
+    margin-bottom:2%;
+    padding: 0.4%; /*поля вокруг объекта*/
+    color: #666;
+    font-size: 16px;
+	margin-left:5%;
+}
+.input:focus{
+    outline: 2px solid #ff6600; /*устанавливает толщину стиль и цвет внешней границы*/
+			}
+
+/*раскрывающийся элемент*/
+select{
+	width:25%;}
+select{
+	background:#e8e8e8;
+	border-top:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	height:100%;
+	margin-bottom:10px;
+	padding:5px;
+	color:#666;
+	font-size:16px;
+	}
+select:focus{
+	box-shadow: inset 0px 0px 2px #ff6600;
+    border-color: #ff6600;
+    outline: none; 
+			}
+/*FORM END*************************************************************/
+			
+/*таблица с личными данными*/
+table {
+	height:100%;
+	width:40%;
+	height:100%;
+	color:#ccc;
+	font-size:12px;
+	margin:6px;
+	margin-left:25%;
+	margin-top:3%;
+}
+/*Строки таблицы*/
+table tr{
+	text-align: center;
+	padding-left:25px;
+}
+
+/*ДЛЯ СТРАНИЦЫ PERSONAL DATE****************************************/
+
+/*ДЛЯ СТРАНИЦЫ NOTICE***********************************************/
+
+/* CHECKBOX BEGIN*****************************************************/
+.checkbox {
+  vertical-align: top;/*выравнить элемент по вертикали, top по верху*/
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+/*кликабельность*/
+.checkbox + label {
+  cursor: pointer;
+}
+/*сокрытие чекбокса*/
+.checkbox:not(checked) {
+  position: absolute; 
+  opacity: 0;
+}
+.checkbox:not(checked) + label {
+  position: relative; /* позиция относительно label */
+  padding: 0 0 0 60px; /*label справа */
+}
+/* вид*/
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 50px;
+  height: 26px;
+  border-radius: 5px;
+  background: #ccc;
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}
+/*вид при включении */
+.checkbox:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 3px;
+  background: #FFF;
+  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+  transition: all .2s; /* эффект перехода между двумя состояниями элемента*/
+}
+/* фон чекбокса, когда включен. */
+.checkbox:checked + label:before {
+  background: #ff6600;
+}
+/* Сдвигаем переключатель при включении */
+.checkbox:checked + label:after {
+  left: 26px;
+}
+/* фокус */
+.checkbox:focus + label:before {
+  box-shadow: 0 0 0 3px #ccc;
+}
+/*CHECKBOX END*********************************************************/
+/*ОТСТУП*/
+.size{
+	margin-top:3%;
+}
+/*ДЛЯ СТРАНИЦЫ NOTICE***********************************************/
