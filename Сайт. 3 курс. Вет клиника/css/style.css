@@ -1,30 +1,28 @@
-﻿@charset "utf-8";
-/* CSS Document */
+@charset "utf-8";
+
 html{
 	 height: 100%;
      width:100%;
      margin: 0;
      padding: 0;
-	 overflow-x:hidden;  /*убирает горизонтальный скролл*/
+	   overflow-x:hidden;  /*убирает горизонтальный скролл*/
 }
 body{
      height: 100%;
      width:100%;
-	 background-color:#bccfe2;
-
+	   background-color:#bccfe2;
 }
 
-/*НАСТРОЙКА ЗАГАЛОВКОВ, АБЗАЦЕВ, ЛИНИЙ BEGIN**********/
 
+/*НАСТРОЙКА ЗАГАЛОВКОВ, АБЗАЦЕВ, ЛИНИЙ */
 h1, h2, h3, h4, h5, h6, p, li {
 	font-family:"Myriad Pro", Helvetica, Arial, sans-serif;
 	color:#502C11;
 }
 
-/*НАСТРОЙКА ЗАГАЛОВКОВ, АБЗАЦЕВ, ЛИНИЙ END**************/
 
-/*НАСТРОЙКА ОСНОВНЫХ БЛОКОВ BEGIN****************/
-#header {
+/*стиль основных блоков*/
+header {
 	background:#bccfe2;
 	height: 40%;
     width: 94%;
@@ -32,14 +30,14 @@ h1, h2, h3, h4, h5, h6, p, li {
 }
 /*адаптация header*/
 @media all and (max-width: 750px) { 
-	#header { 
+	header { 
 	height: 20%;
 } }
 .logo{
-    width: 100%;
-	height:100%;
-		}
-#content{
+     width: 100%;
+	   height:100%;
+}
+main{
 	width:94%;
 	margin: 2% 2% 0 2%;
 	height:auto;
@@ -47,18 +45,18 @@ h1, h2, h3, h4, h5, h6, p, li {
 	background-color:#bccfe2;
 	mix-width: 420px;
 	min-height:100%;
-	}
-/*НАСТРОЙКА ОСНОВНЫХ БЛОКОВ END*****************/
+}
 
-/*NAV BEGIN*****************************/
+
+/*МЕНЮ*/
 nav {
     background-color: #feb761;
     border-top: 6px solid #bccfe2;
     display: block;/*определяет, как элемент должен быть показан в документе. Элемент показывается как блочный*/
     line-height: 50px; /*межстрочный интервал*/
     height: 8%;
-    width: 100%;
-    margin: 0;
+    width: 96%;
+    margin-top: 1%;
     text-align:center;
     margin-right: -100%;
 }
@@ -67,34 +65,30 @@ nav li {
     display: inline-block;/*блочный элемент, который обтекается другими элементами подобно строчному элементу*/
     position: relative;/*Положение элемента устанавливается относительно его исходного места*/
 }
-
 /*неактивные пункты*/
 nav li a {	margin-top:2%;
     border-bottom: 3px solid transparent;/*Устанавливает прозрачный фон*/
     box-sizing: border-box;/*Применяется для изменения алгоритма расчета ширины высоты элемента. width height включают в себя значения полей границ, но не (margin)*/
-	color:#502c11;
+	  color:#502c11;
     display: block;
     font-weight: bold;/*насыщеность шрифта*/
     height: 50px;
     letter-spacing: 0.5px;/*межсимвольный интервал*/
     padding: 0 15px;
 }
-
 a {
 	color:#502c11;
 	font-family:"Myriad Pro", Helvetica, Arial, sans-serif;
-    cursor: pointer;
+  cursor: pointer;
 	font-size:100%;
-    outline: 0 none;/*устанавливает цвет, стиль и толщину внешней границы на всех сторонах элемента*/
-    text-decoration: none;/*оформление текста в виде его подчеркивания, перечеркивания, линии над текстом и мигания. */
+  outline: 0 none;/*устанавливает цвет, стиль и толщину внешней границы на всех сторонах элемента*/
+  text-decoration: none;/*оформление текста в виде его подчеркивания, перечеркивания, линии над текстом и мигания. */
 }
-
 /*фиксирование пунктов*/
 nav {
   display: table;
   table-layout: fixed;
 }
-
 /*при наведение*/
 nav li a:hover {
     border-color:#502c11;
@@ -108,7 +102,7 @@ nav ul {
 nav ul li {
   display: table-cell;
 }
-/*адаптация меню***********************/
+/*адаптация меню*/
 @media  (max-width: 850px) {
   
   nav {
@@ -121,10 +115,10 @@ nav ul li {
   }
 
 }
-/*one MENU END****************************************/
 
-/*слайдер*****************************/
-#main {
+
+/*СЛАЙДЕР*/
+#slider {
 	position:relative;
 	margin: 100px auto;
 	padding: 5px;
@@ -183,21 +177,16 @@ button {
 	right:1px;
 }
 }
-/*слайдер*********************/
 
 
-/*FORM BEGIN*******************************/
+/*ФОРМЫ*/
 .form {
-
 	font-family:"Myriad Pro", Helvetica, Arial, sans-serif;
     font-weight: 400;
-
-    /* Size and position */
     width: 250px;
     margin: 10% auto 4%;
     padding: 10px;
     overflow: hidden;
-    /* Styles */
     background: #bccfe2; 
     border-radius: 0.4em;
     border: 2px solid #502C11;
@@ -210,11 +199,8 @@ button {
         }
 /*поля формы*/
 .form label {
-    /* Size and position */
-   
     float: left;
     padding-top: 9px;
-    /* Styles */
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -228,24 +214,17 @@ button {
 .form input[type=email],
 .form input[type=number],
 .form input[type=password] {
-
-    /* Size and position */;
     float: left;
-	width:95%;
-	
+	  width:95%;
     padding: 8px 5px;
     margin-bottom: 10px;
     font-size: 12px;
-
-    /* Styles */
     background:#feb761;     
     border: 1px solid #502C11;
     border-radius: 3px;
-
-    /* Font styles */
   	font-family:"Myriad Pro", Helvetica, Arial, sans-serif;
     color: #502C11;
-	font-weight:900;
+	  font-weight:900;
 }
 /*наведении в поле*/
 .form input[type=text]:hover,
@@ -270,18 +249,12 @@ button {
 }
 /*кнопка*/
 .form input[type=submit] {
-
-    /* Width and position */
     width:auto;
     padding: 8px 5px;
-
-    /* Styles */
     border: 1px solid #502C11; 
     border-radius: 3px;
     background: #502C11;
     cursor:pointer;
-  
-    /* Font styles */
   	font-family:"Myriad Pro", Helvetica, Arial, sans-serif;
     color: #bccfe2;
     font-weight: 700;
@@ -302,7 +275,7 @@ text-align: center;
     background: #bccfe2;
     border-color: #502C11; 
 }
-/*выравнивание форм в два столбика***********/
+/*выравнивание форм в два столбика*/
 .left_form{
 	float:left;
 	width:50%;
@@ -317,11 +290,11 @@ text-align: center;
 	.right_form { 
   float: none;
 } }
-/*убираем расположение форм в колонки*/
 
 
-/**табы***************************************************************/
-/*вкладки табов*/
+
+/*ТАБЫ*/
+/*вкладки*/
 ul.tab {
     list-style-type: none;
 	width:auto;
@@ -371,9 +344,9 @@ ul.tab li a:focus, .active {
                 font-size: 18px;
             }
         }
-/*табы*****************/
 
-/*БЛОКИ контактами*************************/
+
+/*блоки с контактами*/
 /*блок содержащий в себе текст и подпись*/
 .textizo {
   margin: 6%;
@@ -406,10 +379,10 @@ figcaption {
   margin:20%;
   width: 100%;
 } }
-/*блоки с контактами******************************/
+/*блоки с контактами*/
 
-/*TABLE BEGIN**************************************/
 
+/*ТАБЛИЦА*/
 table {
 	width:90%;
 	margin:5% 5% 5% 5%;
